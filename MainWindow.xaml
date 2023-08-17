@@ -1,0 +1,33 @@
+﻿<Window x:Class="Reserva_Comedor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reserva_Comedor"
+        mc:Ignorable="d"
+        Title="Reserva Comedor Universitario" Height="630" Width="613"
+        ResizeMode="NoResize" WindowState="Normal" WindowStyle="SingleBorderWindow">
+    <Grid RenderTransformOrigin="0.506,0.503">
+        <Button x:Name="BotonReservar" Content="Reservar!" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,429,0,0" Click="Button_Click" Width="120" Height="30">
+            <Button.Background>
+                <SolidColorBrush Color="Aquamarine" />
+            </Button.Background>
+        </Button>
+
+
+        <Rectangle Stroke="#6495ED" Margin="153,239,153,190"/>
+        <Image Source="C:\Users\Usuario\source\repos\Reserva Comedor\Reserva Comedor\escudo-1-1.png" Stretch="Uniform" HorizontalAlignment="Left" 
+               VerticalAlignment="Top" Height="128" Width="106" Margin="257,106,0,0"/>
+        <TextBox x:Name="TextBoxUsuario" HorizontalAlignment="Left" Margin="192,318,0,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" 
+                 Width="120" RenderTransformOrigin="0.564,2.397" GotFocus="TextBoxUsuario_GotFocus" LostFocus="TextBoxUsuario_LostFocus"/>
+        <TextBox x:Name="TextBoxClave" HorizontalAlignment="Left" Margin="192,363,0,0" TextWrapping="Wrap" Text="Clave Semestre 2023 - II" 
+                 VerticalAlignment="Top" Width="146" GotFocus="TextBoxClave_GotFocus" LostFocus="TextBoxClave_LostFocus"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" 
+                   FontSize="12.5"><Run Text="Reserva"/><Run Language="es-mx" Text=" de cupo para el servicio de comedor estudiantil de la UNSAAC"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"><Run 
+            Text="Reserva de Comedor Universitario"/><Run Text=" UNSAAC"/><Run Text=" 2023 - II"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="14">
+            <Run Text="Iniciar Sesi"/><Run Language="es-mx" Text="ó"/><Run Text="n"/></TextBlock>
+        <TextBlock x:Name="TextBlockCuentaRegresiva" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,280,0,0" FontSize="14"/>
+    </Grid>
+</Window>
